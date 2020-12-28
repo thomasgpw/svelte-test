@@ -1,12 +1,10 @@
 <script>
-  import Konva from 'konva'
   import Circle from './KonvaWraps/Circle.svelte';
   import Layer from './KonvaWraps/Layer.svelte'
   export let minInnerLength;
   export let marginLength;
   export let theme;
   export let noteRadii;
-  console.log(minInnerLength/2)
 </script>
 
 <Layer>
