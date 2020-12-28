@@ -1,6 +1,6 @@
 <script lang="ts">
 	import {THEMES, DEFAULT_CONFIG} from './consts';
-	import Canvas from './Canvas.svelte';
+	import SpinnerStage from './SpinnerStage.svelte';
 	let innerWidth: number = window.innerWidth;
 	let innerHeight: number = window.innerHeight;
 	$: minInnerLength = Math.min(innerWidth, innerHeight);
@@ -29,7 +29,7 @@
 	<div class='fullscreen bg-gradient'
 		role='presentation' aria-hidden={true}
 	/>
-	<Canvas {theme} {minInnerLength} {marginLength} />
+	<SpinnerStage {theme} {minInnerLength} {marginLength} />
 	<div id='noise' class='fullscreen noise'
 		role='presentation' aria-hidden={true}
 	/>
